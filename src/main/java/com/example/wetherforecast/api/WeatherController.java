@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 @Controller
 public class WeatherController {
 
+    //weather?city=Warsaw
     @ResponseBody
     @GetMapping("/weather")
     public String getWeather (@RequestParam String city){          //chcemy w parametrze podawac miasto
