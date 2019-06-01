@@ -16,5 +16,4 @@ public class WeatherModel {
     private TemperatureModel temperatureModel=new TemperatureModel();
 
 
-
 }

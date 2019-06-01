@@ -13,6 +13,7 @@ public class TemperatureModel {
 
     private Integer pressure;
 
-
-
+    public Double getTemperature() {
+        return temperature- 273.15;
+    }
 }
