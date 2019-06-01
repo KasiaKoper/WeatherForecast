@@ -11,7 +11,7 @@ public class TemperatureModel {
     @JsonProperty("temp")
     private Double temperature;
 
-    private Integer pressre;
+    private Integer pressure;
 
 
 
