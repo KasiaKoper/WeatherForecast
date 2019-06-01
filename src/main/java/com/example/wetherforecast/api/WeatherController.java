@@ -1,6 +1,9 @@
 package com.example.wetherforecast.api;
 
 import com.example.wetherforecast.model.WeatherModel;
+import com.example.wetherforecast.service.OpenWeatherMapService;
+import com.example.wetherforecast.service.WeatherService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +13,11 @@ import org.springframework.web.client.RestTemplate;
 
 @Controller
 public class WeatherController {
+
+    //private WeatherService weatherService = new OpenWeatherMapService();
+
+    @Autowired
+    private WeatherService weatherService;
 
     //weather?city=Warsaw
     //@ResponseBody
